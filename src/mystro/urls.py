@@ -18,9 +18,10 @@ from django.urls import path ,include
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
+from courses.views import create1
 
 urlpatterns = [
-    path('',),
+    path('',create1),
     path('summernote/', include('django_summernote.urls')),
     path('admin/', admin.site.urls),
 ]

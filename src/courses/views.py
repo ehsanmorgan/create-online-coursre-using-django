@@ -7,4 +7,4 @@ def create1(request):
     Course=course.objects.all()
 
 
-    return render(request,{'Course':Course})
+    return render(request,'create1',{'Course':Course})
