@@ -6,7 +6,7 @@ from taggit.managers import TaggableManager
 
 class course(models.Model):
     title=models.CharField(max_length=100)
-    content=models.TextField(max_length=10000)
+    content=models.TextField(max_length=100000)
     sub_title=models.TextField()
     author=models.CharField(max_length=100)
     reviwes=models.TextField()
