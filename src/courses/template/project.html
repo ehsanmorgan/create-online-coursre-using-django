@@ -1,0 +1,21 @@
+<h1>Blog</h1>
+<a href="/blog/">Create a New Post</a>
+<hr> 
+
+
+{% for item in data %}
+   <h1> <a href="/blog/{{item.id}}"> {{item}} </a>  </h1>
+
+{% endfor %}
+
+{{item}}
+
+
+
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="create new post">
+
+</form>

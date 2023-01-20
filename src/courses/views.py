@@ -1,10 +1,12 @@
 from django.shortcuts import render
 
+
 # Create your views here.
 from courses.models import course
 
-def create1(request):
-    Course=course.objects.all()
+def project_list(request):
+    all=course.objects.all()
+    return render (request,'project.html',{'data':all})
 
 
-    return render(request,'create1',{'Course':Course})
+    

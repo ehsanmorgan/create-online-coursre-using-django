@@ -18,10 +18,10 @@ from django.urls import path ,include
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from courses.views import create1
+from courses.views import project_list
 
 urlpatterns = [
-    path('',create1),
+    path('',project_list),
     path('summernote/', include('django_summernote.urls')),
     path('admin/', admin.site.urls),
 ]
