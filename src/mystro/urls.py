@@ -18,10 +18,11 @@ from django.urls import path ,include
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from courses.views import project_list
+from courses.views import project_list,post_detail
 
 urlpatterns = [
     path('',project_list),
+    path ('blog/<int:id>',post_detail),
     path('summernote/', include('django_summernote.urls')),
     path('admin/', admin.site.urls),
 ]
