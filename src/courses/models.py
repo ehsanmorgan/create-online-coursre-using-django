@@ -16,6 +16,12 @@ class course(models.Model):
 
 
 
+    
+
+
+
+
+
 
 
 

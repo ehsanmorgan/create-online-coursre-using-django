@@ -12,6 +12,11 @@ def project_list(request):
 
 
 
+
+
+
+
+
 def post_detail(request,id):
     Post= course.objects.get(id=id)
     return render(request,'single.html',{'data':Post})
